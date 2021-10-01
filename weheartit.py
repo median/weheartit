@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
 
-
 def look_up(user):
     res = requests.get(f'https://weheartit.com/{str(user)}').text
     soup = BeautifulSoup(res, "html.parser")
